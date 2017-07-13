@@ -1,0 +1,1367 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Invest</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site Description Here">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i%7CMaterial+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+function bailleurdetail()
+{
+    if($('#sb').is(":checked"))   
+        $("#bail").show(300);
+    else
+        $("#bail").hide(300);
+}
+function porteurdetail()
+{
+    if($('#sp').is(":checked"))   
+        $("#port").show(300);
+    else
+        $("#port").hide(300);
+}
+function conseillerdetail()
+{
+    if($('#sc').is(":checked"))   
+        $("#cons").show(300);
+    else
+        $("#cons").hide(300);
+}
+</script>
+
+
+
+
+    </head>
+    <body class=" ">
+        <a id="start"></a>
+        <section class="bar bar-3 bar--sm bg--secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bar__module">
+                            <span class="type--fade">Invest | Plateforme d'investissement</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-right text-left-xs text-left-sm">
+                        <div class="bar__module">
+                            <ul class="menu-horizontal">
+                                <li>
+                                    <div class="modal-instance">
+                                        <a href="#" class="modal-trigger">Login</a>
+                                        <div class="modal-container">
+                                            <div class="modal-content">
+                                                <section class="unpad ">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-sm-6 col-md-offset-3 col-sm-offset-3 col-xs-12">
+                                                                <div class="boxed boxed--lg bg--white text-center feature">
+                                                                    <div class="modal-close modal-close-cross"></div>
+                                                                    <h3>Login to Your Account</h3>
+                                                                    <a class="btn block btn--icon bg--facebook type--uppercase" href="#">
+                                                                        <span class="btn__text">
+                                                                            <i class="socicon-facebook"></i>
+                                                                            Login with Facebook
+                                                                        </span>
+                                                                    </a>
+                                                                    <a class="btn block btn--icon bg--twitter type--uppercase" href="#">
+                                                                        <span class="btn__text">
+                                                                            <i class="socicon-twitter"></i>
+                                                                            Login with Twitter
+                                                                        </span>
+                                                                    </a>
+                                                                    <hr data-title="OR">
+                                                                    <div class="feature__body">
+                                                                        <form>
+                                                                            <div class="row">
+                                                                                <div class="col-sm-12">
+                                                                                    <input type="text" placeholder="Username" />
+                                                                                </div>
+                                                                                <div class="col-sm-12">
+                                                                                    <input type="password" placeholder="Password" />
+                                                                                </div>
+                                                                                <div class="col-sm-12">
+                                                                                    <button class="btn btn--primary type--uppercase" type="submit">Login</button>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--end of row-->
+                                                                        </form>
+                                                                        <span class="type--fine-print block">Dont have an account yet?
+                                                                            <a href="#">Create account</a>
+                                                                        </span>
+                                                                        <span class="type--fine-print block">Forgot your username or password?
+                                                                            <a href="#">Recover account</a>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--end of row-->
+                                                    </div>
+                                                    <!--end of container-->
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="modal-instance">
+                                        <a href="#" class="modal-trigger">Create Account</a>
+                                        <div class="modal-container">
+                                            <div class="modal-content">
+                                                <section class="imageblock feature-large bg--white border--round ">
+                                                    <div class="imageblock__content col-md-5 col-sm-3 pos-left">
+                                                        <div class="background-image-holder">
+                                                            <img alt="image" src="img/cowork-11.jpg" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-5 col-md-push-6 col-sm-7 col-sm-push-4">
+                                                                <h2>Create an account</h2>
+                                                                <a class="btn block btn--icon bg--facebook type--uppercase" href="#">
+                                                                    <span class="btn__text">
+                                                                        <i class="socicon-facebook"></i>
+                                                                        Sign up with Facebook
+                                                                    </span>
+                                                                </a>
+                                                                <a class="btn block btn--icon bg--twitter type--uppercase" href="#">
+                                                                    <span class="btn__text">
+                                                                        <i class="socicon-twitter"></i>
+                                                                        Sign up with Twitter
+                                                                    </span>
+                                                                </a>
+                                                                <hr data-title="OR">
+                                                                <form>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-12">
+                                                                            <input type="email" name="Email Address" placeholder="Email Address" />
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <input type="password" name="Password" placeholder="Password" />
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <button type="submit" class="btn btn--primary type--uppercase">Create Account</button>
+                                                                        </div>
+                                                                        <div class="col-xs-12">
+                                                                            <span class="type--fine-print">By signing up, you agree to the
+                                                                                <a href="#">Terms of Service</a>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--end row-->
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <!--end of row-->
+                                                    </div>
+                                                    <!--end of container-->
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" data-notification-link="search-box">
+                                        <i class="stack-search"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="shop-cart.html">
+                                        <i class="stack-basket"></i>
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" data-notification-link="side-menu">
+                                        <i class="stack-dot-3"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </section>
+        
+        <div class="notification pos-top pos-right search-box bg--white border--bottom" data-animation="from-top" data-notification-link="search-box">
+            <form>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <input type="search" name="query" placeholder="Type search query and hit enter" />
+                    </div>
+                </div>
+                <!--end of row-->
+            </form>
+        </div>
+        <!--end of notification-->
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="index.html">
+                                <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
+                                <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
+                            </a>
+                        </div>
+                        <div class="col-xs-9 col-sm-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1 col-sm-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
+                                    <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-md-11 col-sm-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal text-left">
+                                    <li class="">
+                                        <a href="index.html">
+                                            Home
+                                        </a>
+                                        <!--end dropdown container-->
+                                    </li>
+                                 
+                                </ul>
+                            </div>
+                            <!--end module-->
+                            <div class="bar__module">
+                                <a class="btn btn--sm type--uppercase" href="#">
+                                    <span class="btn__text">
+                                        Votre idée
+                                    </span>
+                                </a>
+                                <a class="btn btn--sm btn--primary type--uppercase" href="#">
+                                    <span class="btn__text">
+                                        Investir
+                                    </span>
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+            <section class="height-100">
+                <div class="container col-md-offset-3">
+                    <div class="row">
+                       <div class="col-md-6 col-sm-7">
+                            <form>
+                            <h4>Informations générales :</h4>
+                                <div class="col-sm-12" >
+                                    <span > (*) Champ obligatoire </span>
+                                </div>
+                                
+                                <div class="col-sm-6">
+                                    <label>First Name  *</label>
+                                    <input type="text" name="name" placeholder="First Name" required/>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label>Last Name *</label>
+                                    <input type="text" name="lastname" placeholder="Last Name" required/>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label>Password *</label>
+                                    <input type="password" name="name" placeholder="Saisir votre mot de passe" required/>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label>Email *</label>
+                                    <input type="email" name="email" placeholder="Email"  required/>
+                                </div>
+
+                                <div class="col-sm-12">
+                                    <label>Raison Social *</label>
+                                    <input type="text" name="raisonSocial" placeholder="Raison Social" required/>
+                                </div>
+                               
+                                <div class="col-sm-12">
+                                    <label>Téléphone:</label>
+                                    <input type="text" name="téléphone" placeholder="Téléphone"  />
+                                </div>
+                                <h4>Choix des profils </h4>
+
+                                <div class="col-sm-12">
+                                    
+                                    <span>S'inscrire en tant que *
+                                    </span>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="input-checkbox ">
+                                        <div class="inner"></div>
+                                        <input type="checkbox" name="bailleur" id="sb" onchange="bailleurdetail()">
+                                    </div>
+                                    <span>Bailleur de fond</span>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="input-checkbox ">
+                                        <div class="inner"></div>
+                                        <input type="checkbox" name="porteur" id="sp" onchange="porteurdetail()">
+                                    </div>
+                                    <span>Porteur de Projet</span>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <div class="input-checkbox ">
+                                        <div class="inner"></div>
+                                        <input type="checkbox" name="conseiller" id="sc" onchange="conseillerdetail()">
+                                    </div>
+                                    <span>Conseiller </span>
+                                </div>
+
+
+
+
+                                <!--Info bailleur-->
+                                <div class="col-sm-12" id="bail" hidden="hidden">
+                                    <h4>Info Bailleur:</h4>
+                                    <hr>
+                                    <span>Veillez selectionner les sectreurs d'activité que vous etes interessé par:</span><br>
+                                        <div class="modal-instance col-md-offset-3" >
+                                                    <a class="btn modal-trigger" href="#">
+                                                        <span class="btn__text">Secteur d'activité</span>
+                                                    </a>
+                                                    <div class="modal-container">
+                                                        <div class="modal-content">
+                                                            <div class="boxed boxed--lg">
+                                                                <h2>Secteurs d'activité</h2>
+
+                                                                      <div class="row">
+                                                                       <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Commerce</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Marketing</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Agricole</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Industrie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Ingénierie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Informatique</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Vente</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name=""  >
+                                                                            </div>
+                                                                            <label>Restauration</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Alimentation</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Animaux</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Architecture</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Biologie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Banque</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Batiment</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Culture</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Hotellerie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Lettres</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Mécanique</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Santé</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Social</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Soins</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Esthétiue</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Sport</label>
+                                                                           
+                                                                        </div>
+
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Animation</label>
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Transport</label>
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Logistique</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Immobilier</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Recherche</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Multimédia</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Maintenance</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Assurance</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Humanitaire</label>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                        </div>
+                                         <div class="col-sm-12">
+                                            <span>Votre Budget</span>
+                                            <select>
+                                                <option value="volvo">-3000</option>
+                                                <option value="saab">3000 à 5000</option>
+                                                <option value="opel">5000 à 10000</option>
+                                                <option value="audi">+10000</option>
+                                            </select>
+                                        </div>
+
+                                    <div class="col-sm-12">
+                                        <span>Maturité du Projet</span><br>
+                                        
+                                        <div class="col-sm-4">
+                                            <div class="input-checkbox ">
+                                                <div class="inner"></div>
+                                                <input type="checkbox" >
+                                              
+                                            </div>
+                                              <span>Idée </span>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="input-checkbox ">
+                                                <div class="inner"></div>
+                                                <input type="checkbox" >
+                                                
+                                            </div>
+                                            <span>Premiers  </span>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="input-checkbox ">
+                                                <div class="inner"></div>
+                                                <input type="checkbox" >
+                                                
+                                            </div>
+                                            <span>Developpement </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                               
+                                  
+                               
+                                <!--Info porteur-->
+                                <div class="col-sm-12" hidden="hidden" id="port">
+                                    <h4>Info Porteur:</h4>
+                                    <hr>
+                                    <span>Veillez selectionner les sectreurs d'activité que vous etes interessé par:</span><br>
+                                        <div class="modal-instance col-md-offset-3" >
+                                                    <a class="btn modal-trigger" href="#">
+                                                        <span class="btn__text">Secteur d'activité</span>
+                                                    </a>
+                                                    <div class="modal-container">
+                                                        <div class="modal-content">
+                                                            <div class="boxed boxed--lg">
+                                                                <h2>Secteurs d'activité</h2>
+
+                                                                      <div class="row">
+                                                                       <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Commerce</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Marketing</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Agricole</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Industrie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Ingénierie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Informatique</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Vente</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name=""  >
+                                                                            </div>
+                                                                            <label>Restauration</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Alimentation</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Animaux</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Architecture</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Biologie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Banque</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Batiment</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Culture</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Hotellerie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Lettres</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Mécanique</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Santé</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Social</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Soins</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Esthétiue</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Sport</label>
+                                                                           
+                                                                        </div>
+
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Animation</label>
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Transport</label>
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Logistique</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Immobilier</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Recherche</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Multimédia</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Maintenance</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Assurance</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Humanitaire</label>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                        </div>
+                                    
+                                </div>
+                                <!--Info consiller-->
+                                <div class="col-sm-12" hidden="hidden" id="cons">
+                                    <h4>Info Conseiller:</h4>
+                                    <hr>
+                                    <span>Selectionner vos compétences</span><br>
+                                        <div class="modal-instance col-md-offset-3" >
+                                                    <a class="btn modal-trigger" href="#">
+                                                        <span class="btn__text">Compétences</span>
+                                                    </a>
+                                                    <div class="modal-container">
+                                                        <div class="modal-content">
+                                                            <div class="boxed boxed--lg">
+                                                                <h2>Compétences</h2>
+
+                                                                      <div class="row">
+                                                                       <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Commerce</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Marketing</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Agricole</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Industrie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Ingénierie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Informatique</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Vente</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name=""  >
+                                                                            </div>
+                                                                            <label>Restauration</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Alimentation</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Animaux</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Architecture</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Biologie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Banque</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Batiment</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Culture</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Hotellerie</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Lettres</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Mécanique</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Santé</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Social</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Soins</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Esthétiue</label>
+                                                                           
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Sport</label>
+                                                                           
+                                                                        </div>
+
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Animation</label>
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Transport</label>
+                                                                            
+                                                                        </div>
+
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Logistique</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Immobilier</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Recherche</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Multimédia</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="" >
+                                                                            </div>
+                                                                            <label>Maintenance</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Assurance</label>
+                                                                            
+                                                                        </div>
+                                                                        <div class="col-sm-4">
+                                                                            <div class="input-checkbox ">
+                                                                                <div class="inner"></div>
+                                                                                <input type="checkbox" name="">
+                                                                            </div>
+                                                                            <label>Humanitaire</label>
+                                                                            
+                                                                        </div>
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <div class="col-sm-12">
+                                                <span>Spécialité</span>
+                                                <input type="text"  placeholder="spécialité"  />
+                                            </div>  
+                                        </div>
+
+                                        
+                                        <div class="col-sm-12">
+                                        <span>Années d'expérience</span><br>
+                                            <div class="input-select">
+                                                <select required="">
+                                                    <option value="-2">-2</option>
+                                                    <option value="2-5">2-5 </option>
+                                                    <option value="5-10">5-10</option>
+                                                    <option value="10-15">10-15</option>
+                                                    <option value="+15">+15</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                </div>
+                               
+
+
+
+
+
+                                
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn btn--primary">Send Form</button>
+                                </div>
+                            </form>
+                        </div>                        
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <footer class="text-center-xs space--xs bg--dark " id="foot">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#">
+                                        <span class="h6 type--uppercase">About</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="h6 type--uppercase">Careers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="h6 type--uppercase">Support</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5 text-right text-center-xs">
+                            <ul class="social-list list-inline list--hover">
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-google icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-instagram icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <span class="type--fine-print">&copy;
+                                <span class="update-year"></span> invest Inc.</span>
+                            <a class="type--fine-print" href="#">Privacy Policy</a>
+                            <a class="type--fine-print" href="#">Legal</a>
+                        </div>
+                        <div class="col-sm-5 text-right text-center-xs">
+                            <a class="type--fine-print" href="#">support@invest.io</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+        </div>
+       <!--end of modal instance-->
+        <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
