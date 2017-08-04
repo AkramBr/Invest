@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Invest</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site Description Here">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i%7CMaterial+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+ <style>
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    border: none;
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+</style>
+    
+    <script src="select2-3.4.1/select2.js"></script>
+    <link href="select2-3.4.1/select2.css" rel="stylesheet"/>
+    <script>
+    $(document).ready(function() {
+        $("#Books").select2({ placeholder: 'Find and Select Books' });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $("#Books1").select2({ placeholder: 'Find and Select Books1' });
+    });
+</script>
+
+  <script type="text/javascript">
+function bailleurdetail()
+{
+    if($('#sb').is(":checked"))   
+        $("#bail").show(300);
+    else
+        $("#bail").hide(300);
+}
+function porteurdetail()
+{
+    if($('#sp').is(":checked"))   
+        $("#port").show(300);
+    else
+        $("#port").hide(300);
+}
+function conseillerdetail()
+{
+    if($('#sc').is(":checked"))   
+        $("#cons").show(300);
+    else
+        $("#cons").hide(300);
+}
+</script>
+
+<script>
+    function checkboxes()
+  {
+   var inputElems = document.getElementsByTagName("input"),
+    count = -1;
+
+    for (var i=0; i<inputElems.length; i++) {       
+       if (inputElems[i].type == "checkbox" && inputElems[i].checked == true){
+          count++;
+       }
+    }
+    alert(count);
+ }
+</script> 
+
+
+<!-- fonction augmnter/ diminier -->
+<script type="text/javascript">
+    function up() {
+n = document.getElementById('nbre');
+n.value = parseInt(n.value)+500;
+
+}
+function down(){
+    p = document.getElementById('nbre');
+p.value = parseInt(n.value)-100;
+}
+</script>
+
+
+
+    </head>
+    <body class=" ">
+        <a id="start"></a>
+        <section class="bar bar-3 bar--sm bg--secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bar__module">
+                            <span class="type--fade">Invest | Plateforme d'investissement</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-right text-left-xs text-left-sm">
+                        <div class="bar__module">
+                            <ul class="menu-horizontal">
+                                <li>
+                                    
+                                        <a href="#" class="">Login</a>
+                                        
+                                    
+                                </li>
+                                <li>
+                                    
+                                        <a href="register.html" >Create Account</a>
+                                        
+                                </li>
+                                
+                                
+                                
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end of row-->
+            </div>
+            <!--end of container-->
+        </section>
+        
+        <div class="notification pos-top pos-right search-box bg--white border--bottom" data-animation="from-top" data-notification-link="search-box">
+            <form>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <input type="search" name="query" placeholder="Type search query and hit enter" />
+                    </div>
+                </div>
+                <!--end of row-->
+            </form>
+        </div>
+        <!--end of notification-->
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="Home.html">
+                                <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
+                                <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
+                            </a>
+                        </div>
+                        <div class="col-xs-9 col-sm-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1 col-sm-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="Home.html">
+                                    <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
+                                    <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-md-11 col-sm-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal text-left">
+                                    <li class="">
+                                        <a href="home.html">
+                                            Home
+                                        </a>
+                                        <!--end dropdown container-->
+                                    </li>
+                                 
+                                </ul>
+                            </div>
+                            <!--end module-->
+                            <div class="bar__module">
+                                <a class="btn btn--sm type--uppercase" href="#">
+                                    <span class="btn__text">
+                                        Votre idée
+                                    </span>
+                                </a>
+                                <a class="btn btn--sm btn--primary type--uppercase" href="#">
+                                    <span class="btn__text">
+                                        Investir
+                                    </span>
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <section class="bg--secondary unpad cta cta-2">
+                                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <h2>Publier Votre Idée</h2>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+                </a>
+            </section>
+
+        <div class="main-container">
+            <section class="height-100">
+                <div class="container col-md-offset-2">
+                    <div class="row">
+                       <div class="col-md-9 col-sm-7">
+                            <form>
+                            <h4>Détails  Pre-NDA :</h4>
+                                
+                                
+                                <div class="col-sm-12">
+                                    <label>Nom Du Projet *</label>
+                                    <input type="text" name="name" placeholder="Saisir le nom de votre projet" required/>  
+                                </div>
+                                <div class="col-sm-12" >
+                                                   <label>Secteurs D'activité</label><br>
+                                                    <select id="Books" style="border-radius:5px; width: 100%" runat="server" data-placeholder="Secteurs d'activité "  class="selectpicker show-menu-arrow " multiple tabindex="6" required>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Énergie</option>
+                                                    <option > Forage gazier et pétrolier</option>
+                                                    <option>Équipements et Services liés au Pétrole et au Gaz</option>
+                                                    <option>Gaz et Pétrole intégrés</option>
+                                                    <option >Exploration et Production de Pétrole et de Gaz</option>
+                                                    <option >Raffinage et Commercialisation de Pétrole et de Gaz</option>
+                                                    <option >Stockage et Transport de Pétrole et de Gaz</option>
+                                                    <option >Charbon et Combustibles</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Matériaux</option>
+                                                    <option>Produits Chimiques de Base</option>
+                                                    <option>Produits Chimiques Diversifiés</option>
+                                                    <option>Engrais et Produits Chimiques Agricoles</option>
+                                                    <option>Gaz Industriels</option>
+                                                    <option>Matériaux de Construction </option>
+                                                    <option>Conteneurs en Verre ou en Métal</option>
+                                                    <option>Emballages en Papier</option>
+                                                    <option>Métaux diversifiés et exploitation minière</option>
+                                                    <option>Produits de la Forêt</option>
+                                                    <option> Produits à Base de Papier</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Industrie</option>
+                                                    <option> Aérospatiale et Défense</option>
+                                                    <option> Produits pour l'Industrie du Bâtiment</option>
+                                                    <option>Construction et Ingénierie
+                                                    <option>Composants et Équipement Électriques</option>
+                                                    <option>Équipement Électriques Lourds</option>
+                                                    <option>Conglomérats Industriels</option>
+                                                    <option>Machines Agricoles</option>
+                                                    <option>Machines Industrielles</option>
+                                                    <option>Sociétés Commerciales et Distributeurs Commerciaux</option>
+                                                    <option>Imprimerie Commerciale</option>
+                                                    <option>Services liés à l’Environnement et aux Locaux</option>
+                                                    <option>Services et fournitures de Bureau</option>
+                                                    <option>Services d'Aide Divers</option>
+                                                    <option>Services de Sécurité et d'Alarme</option>
+                                                    <option>Services Liés aux Ressources Humaines et aux Emplois</option> 
+                                                    <option>Services de Recherche et Conseil</option>
+                                                    <option>Fret Aérien et Logistique</option>
+                                                    <option>Compagnies Aériennes</option>
+                                                    <option>Transport Maritime</option>
+                                                    <option>Transport Ferroviaire</option>
+                                                    <option>Transport Routier</option>
+                                                    <option>Services Aéroportuaires</option>
+                                                    <option>Ports et Services Maritimes</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Consommation Discrétionnaire</option>
+                                                    <option>Pièces Détachées et Équipement d'Automobiles</option>
+                                                    <option>Pneus et Caoutchouc</option>
+                                                    <option>Constructeurs Automobiles</option>
+                                                    <option>Constructeurs de Motocycles</option>
+                                                    <option>Électronique Grand Public </option>
+                                                    <option>Ameublement</option>
+                                                    <option>Constructions d'Habitations Résidentielles</option>
+                                                    <option>Appareils Électroménagers</option>
+                                                    <option>Articles Ménagers et Spécialisés</option>
+                                                    <option>Produits de Loisirs</option>
+                                                    <option>Habillement, Accessoires et Produits de Luxe</option>
+                                                    <option>Chaussures</option>
+                                                    <option>Textiles</option>
+                                                    <option>Casinos et Salles de Jeu</option>
+                                                    <option>Hôtels, Lieux de Villégiature et Croisières</option>
+                                                    <option>Centres de Loisirs</option>
+                                                    <option>Restaurants</option>
+                                                    <option>Services Éducatifs</option>
+                                                    <option>Services Consommateurs Spécialisés</option>
+                                                    <option>Publicité</option>
+                                                    <option>Radiotélévision</option>
+                                                    <option>Câble et Satellite</option>
+                                                    <option>Films et Divertissements</option>
+                                                    <option>Édition</option>
+                                                    <option>Distributeurs</option>
+                                                    <option>Vente au Détail par Catalogue</option>
+                                                    <option>Vente par Internet et marketing direct</option>
+                                                    <option>Grands magasins</option>
+                                                    <option>Distribution Diversifiée</option>
+                                                    <option>Vente au Détail de Vêtements</option>
+                                                    <option>Vente au Détail de Produits Informatiques et Électroniques</option>
+                                                    <option>Vente au Détail de Produits pour la Maison</option>
+                                                    <option>Magasins Spécialisés</option>
+                                                    <option>Vente au Détail de Produits pour l'Automobile</option>
+                                                    <option>Vente au Détail d'Ameublement</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px" >Biens de Consommation de Base</option>
+                                                    <option>Vente au Détail de Médicaments</option>
+                                                    <option>Vente au Détail de Produits Alimentaires</option>
+                                                    <option>Supermarchés et Hypermarchés</option>
+                                                    <option>Brasseurs</option>
+                                                    <option>Distillateurs et Négociants en Vin</option>
+                                                    <option>Boissons Non-alcoolisées</option>
+                                                    <option>Produits Agricoles</option>
+                                                    <option>Aliments et Viandes Conditionnés</option>
+                                                    <option>Tabac</option>
+                                                    <option>Produits Domestiques</option>
+                                                    <option>Produits de Soin Personnel</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Santé</option>
+                                                    <option>Équipements Médicaux</option>
+                                                    <option>Fournitures Médicales</option>
+                                                    <option>Distribution de Produits de Santé</option>
+                                                    <option>Services de Santé</option>
+                                                    <option>Infrastructures Médicales</option>
+                                                    <option>Gestion Intégrée des Soins de Santé</option>
+                                                    <option>Technologies des Soins de Santé </option>
+                                                    <option>Biotechnologie</option>
+                                                    <option>Produits Pharmaceutiques</option>
+                                                    <option>Outils et Services Appliqués aux Sciences Biologiques</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Finance</option>
+                                                    <option>Banques aux Activités Diversifiées</option>
+                                                    <option>Banques régionales</option>
+                                                    <option>Epargne et Prêts Hypothécaires</option>
+                                                    <option>Autres Services Financiers Diversifiés</option>
+                                                    <option>Holdings Multisectoriels</option>
+                                                    <option>Institutions Financières Spécialisées</option>
+                                                    <option>Crédit à la Consommation</option>
+                                                    <option>Banques de Dépôt et de Gestion des Biens</option>
+                                                    <option>Services Bancaires d'Investissement et Courtage</option>
+                                                    <option>Marchés de Capitaux Diversifiés</option>
+                                                    <option>Bourses et données financières</option>
+                                                    <option>SIIC spécialisées dans le Crédit Hypothécaire</option>
+                                                    <option>Courtiers en Assurance</option>
+                                                    <option>Assurances Vie et Assurances Maladie</option>
+                                                    <option>Assurances Multirisques</option>
+                                                    <option>Assurances de Biens et Assurances de Risques Divers</option>
+                                                    <option>Réassurance</option>
+                                                    <option>SIIC à Exploitation Diversifiée </option>
+                                                    <option>SIIC Industrielles </option>
+                                                    <option>SIIC spécialisées dans le Crédit Hypothécaire</option>
+                                                    <option>SIIC Hôtel et Lieu de Villégiature</option>
+                                                    <option>SIIC Bureautiques</option>
+                                                    <option>SIIC Soins de Santé</option>
+                                                    <option>SIIC Résidentielles</option>
+                                                    <option>SIIC au Détail </option>
+                                                    <option>SIIC Spécialisées</option>
+                                                    <option>Activités immobilières diversifiées</option>
+                                                    <option>Sociétés d'Exploitation de Biens Immobiliers </option>
+                                                    <option>Promotion Immobilière</option>
+                                                    <option>Services Immobiliers</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Technologies de l'Information</option>
+                                                    <option>Logiciels et Services Internet</option>
+                                                    <option>Conseils Liés Aux Technologies de l’Information et Autres Services</option>
+                                                    <option>Traitement des Données et Services Externalisés</option>
+                                                    <option>Logiciels d'Application</option>
+                                                    <option>Logiciels Système</option>
+                                                    <option>Logiciel de Divertissement à Domicile</option>
+                                                    <option>Équipement de Communication</option>
+                                                    <option>Technologie du Matériel Informatique, du Stockage et des Périphériques</option>
+                                                    <option>Équipement et Instruments Électroniques</option>
+                                                    <option>Composants Électroniques</option>
+                                                    <option>Services de Fabrication Électronique</option>
+                                                    <option>Distributeurs de Technologie</option>
+                                                    <option>Équipement de Semi-conducteurs</option>
+                                                    <option>Semi-conducteurs </option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Services de Télécommunication </option>
+                                                    <option>Prestataires de services alternatifs</option>
+                                                    <option>Services de Télécommunication Intégrés</option>
+                                                    <option>Services de Télécommunication Sans Fil</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Services aux Collectivités</option>
+                                                    <option>Électricité</option>
+                                                    <option>Gaz</option>
+                                                    <option>Compagnies aux activités diversifiées</option>
+                                                    <option>Compagnies des Eaux</option>
+                                                    <option>Producteurs d’Énergie Indépendants et Fournisseurs d'Énergie</option>
+                                                    <option>Electricité Renouvelable</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Immobilier</option>
+                                                    <option>SIIC à Exploitation Diversifiée</option> 
+                                                    <option>SIIC Industrielles</option>
+                                                    <option>SIIC Hôtel et Lieu de Villégiature </option>
+                                                    <option>SIIC Bureautiques</option>
+                                                    <option>SIIC Soins de Santé </option>
+                                                    <option>SIIC Résidentielles</option>
+                                                    <option>SIIC au Détail</option>
+                                                    <option>SIIC Spécialisées</option>
+                                                    <option>Activités Immobilières Diversifiées</option>
+                                                    <option>Sociétés d'Exploitation de Biens Immobiliers</option> 
+                                                    <option>Promotion Immobilière</option>
+                                                    <option>Services Immobiliers</option>
+                                                    </select>
+                                </div>
+
+
+                                        
+
+                                         <div class="col-sm-12">
+                                           <span> Selectionner votre budget pour les projets </span> <br>
+                                            <div class="col-sm-6">
+                                            <label>Min: *</label>
+                                                <input type="number" required />
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                            <label>Max: *</label>
+                                                <input type="number" required>
+                                            </div>
+                                        </div>
+                                     <div class="col-sm-12">
+                                           <span> Duére de réalisation </span> <br>
+                                            <div class="col-sm-6">
+                                            <label>Entre: *</label>
+                                                <input type="number" placeholder="Mois" required />
+                                                <span style="float: right;">En Mois</span>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                            <label>Entre: *</label>
+                                                <input type="number" placeholder="Mois" required />
+                                                <span style="float: right;">En Mois</span>
+                                            </div>
+                                        </div>
+
+                                                                                   
+                                                
+
+                                
+                                <div class="col-sm-12">
+                                    <label>Description *</label>
+                                    <textarea name="name" placeholder="Saisir une petite description a propot votre projet" required maxlength="50"></textarea>
+                                </div>
+                                 <div class="col-sm-12" style="overflow-x:auto;">
+                                    <label>Projection financière *</label>
+                                        <table class="border--round">
+                                        <thead>
+                                          <tr>
+                                            <th> Année</th>
+                                            <th> Année 1 </th>
+                                            <th> Année 2 </th>
+                                            <th> Année 3</th>
+                                            <th> Année 4</th>
+                                            <th> Année 5</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>`
+                                            <td><label>Chiffre d'affaire</label></td>
+                                            <td><input type="text" name="CA" required></td>
+                                            <td><input type="text" name="CA1" required></td>
+                                            <td><input type="text" name="CA2" required></td>
+                                            <td><input type="text" name="CA3" required></td>
+                                            <td><input type="text" name="CA4" required></td>
+                                          </tr>
+                                        </tbody>
+                                    </table> 
+                                 </div>
+                                 <h4>Détails  Après NDA :</h4>
+                                 <div class="col-sm-12">
+                                    <h1>Charger votre NDA :</h1>
+                                    <input type="file" >
+                              </div>
+                                 <div class="col-sm-12">  
+                                    <label>Déscription détaillée *</label>
+                                    <textarea name="message" placeholder="Saisir une description detailléz pour votre projet" class="validate-required" rows="4" required></textarea><br>
+                                </div> 
+                               <div class="col-sm-12" style="overflow-x:auto;">
+                                 <label>Projection financière détaillée *</label>
+                                    <table class="border--round">
+                                        <thead>       
+                                          <tr>
+                                            <th> Année</th>
+                                            <th> Année 1 </th>
+                                            <th> Année 2 </th>
+                                            <th> Année 3</th>
+                                            <th> Année 4</th>
+                                            <th> Année 5</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Chiffre d'affaire</td>
+                                                <td><input type="text" name="CA" required></td>
+                                                <td><input type="text" name="CA1" required></td>
+                                                <td><input type="text" name="CA2" required></td>
+                                                <td><input type="text" name="CA3" required></td>
+                                                <td><input type="text" name="CA4" required></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Marge brute</td>
+                                                <td><input type="text" name="marge" required></td>
+                                                <td><input type="text" name="marge1" required></td>
+                                                <td><input type="text" name="marge2" required></td>
+                                                <td><input type="text" name="marge3" required></td>
+                                                <td><input type="text" name="marge4" required></td>
+                                            </tr>
+                                            <tr>
+                                                <td>EBITDA</td>
+                                                <td><input type="text" name="ebitda" required></td>
+                                                <td><input type="text" name="ebitda1" required></td>
+                                                <td><input type="text" name="ebitda2" required></td>
+                                                <td><input type="text" name="ebitda3" required></td>
+                                                <td><input type="text" name="ebitda4" required></td>
+                                            </tr>
+                                            <tr><td>Résultat net</td>
+                                                <td><input type="text" name="resultat" required></td>
+                                                <td><input type="text" name="resultat1" required></td>
+                                                <td><input type="text" name="resultat2" required></td>
+                                                <td><input type="text" name="resultat3" required></td>
+                                                <td><input type="text" name="resultat3" required></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>  
+                               </div>
+                               <div class="col-sm-12">
+                                    <h1>Sélectionnez des fichiers à charger :</h1>
+                                    <input type="file" multiple>
+                                    <span>Sélectionnez des fichiers</span>
+                              </div>   
+                               <div class="col-sm-12">
+                                    <button type="submit" class="btn btn--primary" >Send Form</button>
+                                </div>
+
+                            </form>
+
+                        </div>                        
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <footer class="text-center-xs space--xs bg--dark " id="foot">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#">
+                                        <span class="h6 type--uppercase">About</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="h6 type--uppercase">Careers</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="h6 type--uppercase">Support</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-5 text-right text-center-xs">
+                            <ul class="social-list list-inline list--hover">
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-google icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="socicon socicon-instagram icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <span class="type--fine-print">&copy;
+                                <span class="update-year"></span> invest Inc.</span>
+                            <a class="type--fine-print" href="#">Privacy Policy</a>
+                            <a class="type--fine-print" href="#">Legal</a>
+                        </div>
+                        <div class="col-sm-5 text-right text-center-xs">
+                            <a class="type--fine-print" href="#">support@invest.io</a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+        </div>
+       <!--end of modal instance-->
+        <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+
+<script>
+  var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script src="js/ion.rangeSlider.js"></script>
+
+<script>
+
+    $(function () {
+
+        $("#range").ionRangeSlider({
+            hide_min_max: true,
+            keyboard: true,
+            min: 0,
+            max: 4000000000,
+            from: 1000000,
+            to: 400000000,
+            type: 'double',
+            step: 100000,
+            prefix: "TND ",
+            grid: true
+        });
+
+    });
+</script>
+
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
