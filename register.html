@@ -15,8 +15,27 @@
         <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i%7CMaterial+Icons" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
+         <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    
+    <script src="select2-3.4.1/select2.js"></script>
+    <link href="select2-3.4.1/select2.css" rel="stylesheet"/>
+    <script>
+    $(document).ready(function() {
+        $("#Books").select2({ placeholder: 'Find and Select Books' });
+    });
+</script>
+
+<script>
+    $(document).ready(function() {
+        $("#Books1").select2({ placeholder: 'Find and Select Books1' });
+    });
+</script>
+
+  <script type="text/javascript">
 function bailleurdetail()
 {
     if($('#sb').is(":checked"))   
@@ -40,6 +59,23 @@ function conseillerdetail()
 }
 </script>
 
+<script>
+    function checkboxes()
+  {
+   var inputElems = document.getElementsByTagName("input"),
+    count = -1;
+
+    for (var i=0; i<inputElems.length; i++) {       
+       if (inputElems[i].type == "checkbox" && inputElems[i].checked == true){
+          count++;
+       }
+    }
+    alert(count);
+ }
+</script> 
+
+
+
 
 
 
@@ -58,136 +94,20 @@ function conseillerdetail()
                         <div class="bar__module">
                             <ul class="menu-horizontal">
                                 <li>
-                                    <div class="modal-instance">
-                                        <a href="#" class="modal-trigger">Login</a>
-                                        <div class="modal-container">
-                                            <div class="modal-content">
-                                                <section class="unpad ">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-sm-6 col-md-offset-3 col-sm-offset-3 col-xs-12">
-                                                                <div class="boxed boxed--lg bg--white text-center feature">
-                                                                    <div class="modal-close modal-close-cross"></div>
-                                                                    <h3>Login to Your Account</h3>
-                                                                    <a class="btn block btn--icon bg--facebook type--uppercase" href="#">
-                                                                        <span class="btn__text">
-                                                                            <i class="socicon-facebook"></i>
-                                                                            Login with Facebook
-                                                                        </span>
-                                                                    </a>
-                                                                    <a class="btn block btn--icon bg--twitter type--uppercase" href="#">
-                                                                        <span class="btn__text">
-                                                                            <i class="socicon-twitter"></i>
-                                                                            Login with Twitter
-                                                                        </span>
-                                                                    </a>
-                                                                    <hr data-title="OR">
-                                                                    <div class="feature__body">
-                                                                        <form>
-                                                                            <div class="row">
-                                                                                <div class="col-sm-12">
-                                                                                    <input type="text" placeholder="Username" />
-                                                                                </div>
-                                                                                <div class="col-sm-12">
-                                                                                    <input type="password" placeholder="Password" />
-                                                                                </div>
-                                                                                <div class="col-sm-12">
-                                                                                    <button class="btn btn--primary type--uppercase" type="submit">Login</button>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!--end of row-->
-                                                                        </form>
-                                                                        <span class="type--fine-print block">Dont have an account yet?
-                                                                            <a href="#">Create account</a>
-                                                                        </span>
-                                                                        <span class="type--fine-print block">Forgot your username or password?
-                                                                            <a href="#">Recover account</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end of row-->
-                                                    </div>
-                                                    <!--end of container-->
-                                                </section>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
+                                        <a href="#" class="">Login</a>
+                                        
+                                    
                                 </li>
                                 <li>
-                                    <div class="modal-instance">
-                                        <a href="#" class="modal-trigger">Create Account</a>
-                                        <div class="modal-container">
-                                            <div class="modal-content">
-                                                <section class="imageblock feature-large bg--white border--round ">
-                                                    <div class="imageblock__content col-md-5 col-sm-3 pos-left">
-                                                        <div class="background-image-holder">
-                                                            <img alt="image" src="img/cowork-11.jpg" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-md-5 col-md-push-6 col-sm-7 col-sm-push-4">
-                                                                <h2>Create an account</h2>
-                                                                <a class="btn block btn--icon bg--facebook type--uppercase" href="#">
-                                                                    <span class="btn__text">
-                                                                        <i class="socicon-facebook"></i>
-                                                                        Sign up with Facebook
-                                                                    </span>
-                                                                </a>
-                                                                <a class="btn block btn--icon bg--twitter type--uppercase" href="#">
-                                                                    <span class="btn__text">
-                                                                        <i class="socicon-twitter"></i>
-                                                                        Sign up with Twitter
-                                                                    </span>
-                                                                </a>
-                                                                <hr data-title="OR">
-                                                                <form>
-                                                                    <div class="row">
-                                                                        <div class="col-xs-12">
-                                                                            <input type="email" name="Email Address" placeholder="Email Address" />
-                                                                        </div>
-                                                                        <div class="col-xs-12">
-                                                                            <input type="password" name="Password" placeholder="Password" />
-                                                                        </div>
-                                                                        <div class="col-xs-12">
-                                                                            <button type="submit" class="btn btn--primary type--uppercase">Create Account</button>
-                                                                        </div>
-                                                                        <div class="col-xs-12">
-                                                                            <span class="type--fine-print">By signing up, you agree to the
-                                                                                <a href="#">Terms of Service</a>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <!--end row-->
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                        <!--end of row-->
-                                                    </div>
-                                                    <!--end of container-->
-                                                </section>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <a href="#" data-notification-link="search-box">
-                                        <i class="stack-search"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="shop-cart.html">
-                                        <i class="stack-basket"></i>
-                                    </a>
+                                    
+                                        <a href="register.html" >Create Account</a>
+                                        
                                 </li>
                                 
-                                <li>
-                                    <a href="#" data-notification-link="side-menu">
-                                        <i class="stack-dot-3"></i>
-                                    </a>
-                                </li>
+                                
+                                
+                                
                             </ul>
                         </div>
                     </div>
@@ -213,7 +133,7 @@ function conseillerdetail()
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-3 col-sm-2">
-                            <a href="index.html">
+                            <a href="Home.html">
                                 <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
                                 <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
                             </a>
@@ -234,7 +154,7 @@ function conseillerdetail()
                     <div class="row">
                         <div class="col-md-1 col-sm-2 hidden-xs">
                             <div class="bar__module">
-                                <a href="index.html">
+                                <a href="Home.html">
                                     <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
                                     <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
                                 </a>
@@ -245,7 +165,7 @@ function conseillerdetail()
                             <div class="bar__module">
                                 <ul class="menu-horizontal text-left">
                                     <li class="">
-                                        <a href="index.html">
+                                        <a href="home.html">
                                             Home
                                         </a>
                                         <!--end dropdown container-->
@@ -275,6 +195,19 @@ function conseillerdetail()
             </nav>
             <!--end bar-->
         </div>
+        <section class="bg--secondary unpad cta cta-2">
+                                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <h2>Create Your Account</h2>
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+                </a>
+            </section>
+
         <div class="main-container">
             <section class="height-100">
                 <div class="container col-md-offset-3">
@@ -282,10 +215,7 @@ function conseillerdetail()
                        <div class="col-md-6 col-sm-7">
                             <form>
                             <h4>Informations générales :</h4>
-                                <div class="col-sm-12" >
-                                    <span > (*) Champ obligatoire </span>
-                                </div>
-                                
+                         
                                 <div class="col-sm-6">
                                     <label>First Name  *</label>
                                     <input type="text" name="name" placeholder="First Name" required/>
@@ -312,11 +242,14 @@ function conseillerdetail()
                                     <label>Téléphone:</label>
                                     <input type="text" name="téléphone" placeholder="Téléphone"  />
                                 </div>
+                                <div class="col-sm-12" >
+                                    <label> (*) Champ obligatoire </label>
+                                </div>
                                 <h4>Choix des profils </h4>
 
                                 <div class="col-sm-12">
                                     
-                                    <span>S'inscrire en tant que *
+                                    <span>S'inscrire en tant que :
                                     </span>
                                 </div>
 
@@ -327,21 +260,13 @@ function conseillerdetail()
                                     </div>
                                     <span>Bailleur de fond</span>
                                 </div>
-
+                                
                                 <div class="col-sm-4">
                                     <div class="input-checkbox ">
                                         <div class="inner"></div>
                                         <input type="checkbox" name="porteur" id="sp" onchange="porteurdetail()">
                                     </div>
                                     <span>Porteur de Projet</span>
-                                </div>
-
-                                <div class="col-sm-4">
-                                    <div class="input-checkbox ">
-                                        <div class="inner"></div>
-                                        <input type="checkbox" name="conseiller" id="sc" onchange="conseillerdetail()">
-                                    </div>
-                                    <span>Conseiller </span>
                                 </div>
 
 
@@ -351,320 +276,228 @@ function conseillerdetail()
                                 <div class="col-sm-12" id="bail" hidden="hidden">
                                     <h4>Info Bailleur:</h4>
                                     <hr>
-                                    <span>Veillez selectionner les sectreurs d'activité que vous etes interessé par:</span><br>
-                                        <div class="modal-instance col-md-offset-3" >
-                                                    <a class="btn modal-trigger" href="#">
-                                                        <span class="btn__text">Secteur d'activité</span>
-                                                    </a>
-                                                    <div class="modal-container">
-                                                        <div class="modal-content">
-                                                            <div class="boxed boxed--lg">
-                                                                <h2>Secteurs d'activité</h2>
 
-                                                                      <div class="row">
-                                                                       <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Commerce</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Marketing</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Agricole</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Industrie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Ingénierie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Informatique</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Vente</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name=""  >
-                                                                            </div>
-                                                                            <label>Restauration</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Alimentation</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Animaux</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Architecture</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Biologie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Banque</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Batiment</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Culture</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Hotellerie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Lettres</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Mécanique</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Santé</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Social</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Soins</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Esthétiue</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Sport</label>
-                                                                           
-                                                                        </div>
-
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Animation</label>
-                                                                            
-                                                                        </div>
-
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Transport</label>
-                                                                            
-                                                                        </div>
-
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Logistique</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Immobilier</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Recherche</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Multimédia</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Maintenance</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Assurance</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Humanitaire</label>
-                                                                            
-                                                                        </div>
-                                                                    </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                        </div>
-                                         <div class="col-sm-12">
-                                            <span>Votre Budget</span>
-                                            <select>
-                                                <option value="volvo">-3000</option>
-                                                <option value="saab">3000 à 5000</option>
-                                                <option value="opel">5000 à 10000</option>
-                                                <option value="audi">+10000</option>
-                                            </select>
-                                        </div>
-
-                                    <div class="col-sm-12">
-                                        <span>Maturité du Projet</span><br>
-                                        
-                                        <div class="col-sm-4">
-                                            <div class="input-checkbox ">
-                                                <div class="inner"></div>
-                                                <input type="checkbox" >
+                                    <span>Veillez selectionner les sectreurs d'activité que vous etes interessé par:</span>
+                                                                                   
+                                                <div class="form-group col-sm-12" ">
                                               
-                                            </div>
-                                              <span>Idée </span>
+                                                    <select id="Books" style="border-radius:5px; width: 494px" runat="server" data-placeholder="Secteurs d'activité "  class="selectpicker show-menu-arrow " multiple tabindex="6" >
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Énergie</option>
+                                                    <option > Forage gazier et pétrolier</option>
+                                                    <option>Équipements et Services liés au Pétrole et au Gaz</option>
+                                                    <option>Gaz et Pétrole intégrés</option>
+                                                    <option >Exploration et Production de Pétrole et de Gaz</option>
+                                                    <option >Raffinage et Commercialisation de Pétrole et de Gaz</option>
+                                                    <option >Stockage et Transport de Pétrole et de Gaz</option>
+                                                    <option >Charbon et Combustibles</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Matériaux</option>
+                                                    <option>Produits Chimiques de Base</option>
+                                                    <option>Produits Chimiques Diversifiés</option>
+                                                    <option>Engrais et Produits Chimiques Agricoles</option>
+                                                    <option>Gaz Industriels</option>
+                                                    <option>Matériaux de Construction </option>
+                                                    <option>Conteneurs en Verre ou en Métal</option>
+                                                    <option>Emballages en Papier</option>
+                                                    <option>Métaux diversifiés et exploitation minière</option>
+                                                    <option>Produits de la Forêt</option>
+                                                    <option> Produits à Base de Papier</option>
+                                                 	<option disabled="disabled" style="font-weight: 900; font-size: 16px">Industrie</option>
+                                                    <option> Aérospatiale et Défense</option>
+                                                    <option> Produits pour l'Industrie du Bâtiment</option>
+                                                    <option>Construction et Ingénierie
+                                                    <option>Composants et Équipement Électriques</option>
+                                                    <option>Équipement Électriques Lourds</option>
+                                                    <option>Conglomérats Industriels</option>
+                                                    <option>Machines Agricoles</option>
+                                                    <option>Machines Industrielles</option>
+                                                    <option>Sociétés Commerciales et Distributeurs Commerciaux</option>
+                                                    <option>Imprimerie Commerciale</option>
+                                                    <option>Services liés à l’Environnement et aux Locaux</option>
+                                                    <option>Services et fournitures de Bureau</option>
+                                                    <option>Services d'Aide Divers</option>
+                                                    <option>Services de Sécurité et d'Alarme</option>
+                                                    <option>Services Liés aux Ressources Humaines et aux Emplois</option> 
+                                                    <option>Services de Recherche et Conseil</option>
+                                                    <option>Fret Aérien et Logistique</option>
+                                                    <option>Compagnies Aériennes</option>
+                                                    <option>Transport Maritime</option>
+                                                    <option>Transport Ferroviaire</option>
+                                                    <option>Transport Routier</option>
+                                                    <option>Services Aéroportuaires</option>
+                                                    <option>Ports et Services Maritimes</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Consommation Discrétionnaire</option>
+                                                    <option>Pièces Détachées et Équipement d'Automobiles</option>
+                                                    <option>Pneus et Caoutchouc</option>
+                                                    <option>Constructeurs Automobiles</option>
+                                                    <option>Constructeurs de Motocycles</option>
+                                                    <option>Électronique Grand Public </option>
+                                                    <option>Ameublement</option>
+                                                    <option>Constructions d'Habitations Résidentielles</option>
+                                                    <option>Appareils Électroménagers</option>
+                                                    <option>Articles Ménagers et Spécialisés</option>
+                                                    <option>Produits de Loisirs</option>
+                                                    <option>Habillement, Accessoires et Produits de Luxe</option>
+                                                    <option>Chaussures</option>
+                                                    <option>Textiles</option>
+                                                    <option>Casinos et Salles de Jeu</option>
+                                                    <option>Hôtels, Lieux de Villégiature et Croisières</option>
+                                                    <option>Centres de Loisirs</option>
+                                                    <option>Restaurants</option>
+                                                    <option>Services Éducatifs</option>
+                                                    <option>Services Consommateurs Spécialisés</option>
+                                                    <option>Publicité</option>
+                                                    <option>Radiotélévision</option>
+                                                    <option>Câble et Satellite</option>
+                                                    <option>Films et Divertissements</option>
+                                                    <option>Édition</option>
+                                                    <option>Distributeurs</option>
+                                                    <option>Vente au Détail par Catalogue</option>
+                                                    <option>Vente par Internet et marketing direct</option>
+                                                    <option>Grands magasins</option>
+                                                    <option>Distribution Diversifiée</option>
+                                                    <option>Vente au Détail de Vêtements</option>
+                                                    <option>Vente au Détail de Produits Informatiques et Électroniques</option>
+                                                    <option>Vente au Détail de Produits pour la Maison</option>
+                                                    <option>Magasins Spécialisés</option>
+                                                    <option>Vente au Détail de Produits pour l'Automobile</option>
+                                                    <option>Vente au Détail d'Ameublement</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px" >Biens de Consommation de Base</option>
+                                                    <option>Vente au Détail de Médicaments</option>
+                                                    <option>Vente au Détail de Produits Alimentaires</option>
+                                                    <option>Supermarchés et Hypermarchés</option>
+                                                    <option>Brasseurs</option>
+                                                    <option>Distillateurs et Négociants en Vin</option>
+                                                    <option>Boissons Non-alcoolisées</option>
+                                                    <option>Produits Agricoles</option>
+                                                    <option>Aliments et Viandes Conditionnés</option>
+                                                    <option>Tabac</option>
+                                                    <option>Produits Domestiques</option>
+                                                    <option>Produits de Soin Personnel</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Santé</option>
+                                                    <option>Équipements Médicaux</option>
+                                                    <option>Fournitures Médicales</option>
+                                                    <option>Distribution de Produits de Santé</option>
+                                                    <option>Services de Santé</option>
+                                                    <option>Infrastructures Médicales</option>
+                                                    <option>Gestion Intégrée des Soins de Santé</option>
+                                                    <option>Technologies des Soins de Santé </option>
+                                                    <option>Biotechnologie</option>
+                                                    <option>Produits Pharmaceutiques</option>
+                                                    <option>Outils et Services Appliqués aux Sciences Biologiques</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Finance</option>
+                                                    <option>Banques aux Activités Diversifiées</option>
+                                                    <option>Banques régionales</option>
+                                                    <option>Epargne et Prêts Hypothécaires</option>
+                                                    <option>Autres Services Financiers Diversifiés</option>
+                                                    <option>Holdings Multisectoriels</option>
+                                                    <option>Institutions Financières Spécialisées</option>
+                                                    <option>Crédit à la Consommation</option>
+                                                    <option>Banques de Dépôt et de Gestion des Biens</option>
+                                                    <option>Services Bancaires d'Investissement et Courtage</option>
+                                                    <option>Marchés de Capitaux Diversifiés</option>
+                                                    <option>Bourses et données financières</option>
+                                                    <option>SIIC spécialisées dans le Crédit Hypothécaire</option>
+                                                    <option>Courtiers en Assurance</option>
+                                                    <option>Assurances Vie et Assurances Maladie</option>
+                                                    <option>Assurances Multirisques</option>
+                                                    <option>Assurances de Biens et Assurances de Risques Divers</option>
+                                                    <option>Réassurance</option>
+                                                    <option>SIIC à Exploitation Diversifiée </option>
+                                                    <option>SIIC Industrielles </option>
+                                                    <option>SIIC spécialisées dans le Crédit Hypothécaire</option>
+                                                    <option>SIIC Hôtel et Lieu de Villégiature</option>
+                                                    <option>SIIC Bureautiques</option>
+                                                    <option>SIIC Soins de Santé</option>
+                                                    <option>SIIC Résidentielles</option>
+                                                    <option>SIIC au Détail </option>
+                                                    <option>SIIC Spécialisées</option>
+                                                    <option>Activités immobilières diversifiées</option>
+                                                    <option>Sociétés d'Exploitation de Biens Immobiliers </option>
+                                                    <option>Promotion Immobilière</option>
+                                                    <option>Services Immobiliers</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Technologies de l'Information</option>
+                                                    <option>Logiciels et Services Internet</option>
+                                                    <option>Conseils Liés Aux Technologies de l’Information et Autres Services</option>
+                                                    <option>Traitement des Données et Services Externalisés</option>
+                                                    <option>Logiciels d'Application</option>
+                                                    <option>Logiciels Système</option>
+                                                    <option>Logiciel de Divertissement à Domicile</option>
+                                                    <option>Équipement de Communication</option>
+                                                    <option>Technologie du Matériel Informatique, du Stockage et des Périphériques</option>
+                                                    <option>Équipement et Instruments Électroniques</option>
+                                                    <option>Composants Électroniques</option>
+                                                    <option>Services de Fabrication Électronique</option>
+                                                    <option>Distributeurs de Technologie</option>
+                                                    <option>Équipement de Semi-conducteurs</option>
+                                                    <option>Semi-conducteurs </option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Services de Télécommunication </option>
+                                                    <option>Prestataires de services alternatifs</option>
+                                                    <option>Services de Télécommunication Intégrés</option>
+                                                    <option>Services de Télécommunication Sans Fil</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Services aux Collectivités</option>
+                                                    <option>Électricité</option>
+                                                    <option>Gaz</option>
+                                                    <option>Compagnies aux activités diversifiées</option>
+                                                    <option>Compagnies des Eaux</option>
+                                                    <option>Producteurs d’Énergie Indépendants et Fournisseurs d'Énergie</option>
+                                                    <option>Electricité Renouvelable</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Immobilier</option>
+                                                    <option>SIIC à Exploitation Diversifiée</option> 
+                                                    <option>SIIC Industrielles</option>
+                                                    <option>SIIC Hôtel et Lieu de Villégiature </option>
+                                                    <option>SIIC Bureautiques</option>
+                                                    <option>SIIC Soins de Santé </option>
+                                                    <option>SIIC Résidentielles</option>
+                                                    <option>SIIC au Détail</option>
+                                                    <option>SIIC Spécialisées</option>
+                                                    <option>Activités Immobilières Diversifiées</option>
+                                                    <option>Sociétés d'Exploitation de Biens Immobiliers</option> 
+                                                    <option>Promotion Immobilière</option>
+                                                    <option>Services Immobiliers</option>
+                                                            </select>
+                                            
+                                                        
+                                              
+                                         
                                         </div>
-                                        <div class="col-sm-4">
-                                            <div class="input-checkbox ">
-                                                <div class="inner"></div>
-                                                <input type="checkbox" >
-                                                
-                                            </div>
-                                            <span>Premiers  </span>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="input-checkbox ">
-                                                <div class="inner"></div>
-                                                <input type="checkbox" >
-                                                
-                                            </div>
-                                            <span>Developpement </span>
-                                        </div>
+                                        <span> Selectionner votre budget pour les projets: </span>
 
-                                    </div>
+                                         <div class="col-sm-12">
+                                            
+                                            <div class="col-sm-6">
+                                            <span>Min:</span>
+                                                <input type="text"/>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                            <span>Max:</span>
+                                                <input type="text"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <span>Maturité du Projet</span><br>
+                                            <div class="col-sm-4">
+                                                <div class="input-checkbox ">
+                                                    <div class="inner"></div>
+                                                    <input type="checkbox" >
+                                                </div>
+                                                <span>Idée </span>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="input-checkbox ">
+                                                    <div class="inner"></div>
+                                                    <input type="checkbox" >
+                                                </div>
+                                                <span>Sed  </span>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="input-checkbox ">
+                                                    <div class="inner"></div>
+                                                    <input type="checkbox" >
+                                                </div>
+                                                <span>Developpement </span>
+                                            </div>
+                                        </div>
                                 </div>
                                
                                   
@@ -673,594 +506,195 @@ function conseillerdetail()
                                 <div class="col-sm-12" hidden="hidden" id="port">
                                     <h4>Info Porteur:</h4>
                                     <hr>
-                                    <span>Veillez selectionner les sectreurs d'activité que vous etes interessé par:</span><br>
-                                        <div class="modal-instance col-md-offset-3" >
-                                                    <a class="btn modal-trigger" href="#">
-                                                        <span class="btn__text">Secteur d'activité</span>
-                                                    </a>
-                                                    <div class="modal-container">
-                                                        <div class="modal-content">
-                                                            <div class="boxed boxed--lg">
-                                                                <h2>Secteurs d'activité</h2>
-
-                                                                      <div class="row">
-                                                                       <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Commerce</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Marketing</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Agricole</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Industrie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Ingénierie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Informatique</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Vente</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name=""  >
-                                                                            </div>
-                                                                            <label>Restauration</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Alimentation</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Animaux</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Architecture</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Biologie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Banque</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Batiment</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Culture</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Hotellerie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Lettres</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Mécanique</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Santé</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Social</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Soins</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Esthétiue</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Sport</label>
-                                                                           
-                                                                        </div>
-
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Animation</label>
-                                                                            
-                                                                        </div>
-
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Transport</label>
-                                                                            
-                                                                        </div>
-
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Logistique</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Immobilier</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Recherche</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Multimédia</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Maintenance</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Assurance</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Humanitaire</label>
-                                                                            
-                                                                        </div>
-                                                                    </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                        </div>
-                                    
-                                </div>
-                                <!--Info consiller-->
-                                <div class="col-sm-12" hidden="hidden" id="cons">
-                                    <h4>Info Conseiller:</h4>
-                                    <hr>
-                                    <span>Selectionner vos compétences</span><br>
-                                        <div class="modal-instance col-md-offset-3" >
-                                                    <a class="btn modal-trigger" href="#">
-                                                        <span class="btn__text">Compétences</span>
-                                                    </a>
-                                                    <div class="modal-container">
-                                                        <div class="modal-content">
-                                                            <div class="boxed boxed--lg">
-                                                                <h2>Compétences</h2>
-
-                                                                      <div class="row">
-                                                                       <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Commerce</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Marketing</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Agricole</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Industrie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Ingénierie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Informatique</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Vente</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name=""  >
-                                                                            </div>
-                                                                            <label>Restauration</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Alimentation</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Animaux</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Architecture</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Biologie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Banque</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Batiment</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Culture</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Hotellerie</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Lettres</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Mécanique</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Santé</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Social</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Soins</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Esthétiue</label>
-                                                                           
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Sport</label>
-                                                                           
-                                                                        </div>
-
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Animation</label>
-                                                                            
-                                                                        </div>
-
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Transport</label>
-                                                                            
-                                                                        </div>
-
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Logistique</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Immobilier</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Recherche</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Multimédia</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="" >
-                                                                            </div>
-                                                                            <label>Maintenance</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Assurance</label>
-                                                                            
-                                                                        </div>
-                                                                        <div class="col-sm-4">
-                                                                            <div class="input-checkbox ">
-                                                                                <div class="inner"></div>
-                                                                                <input type="checkbox" name="">
-                                                                            </div>
-                                                                            <label>Humanitaire</label>
-                                                                            
-                                                                        </div>
-                                                                    </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                        </div>
-                                        <div class="col-sm-12">
-                                            <div class="col-sm-12">
-                                                <span>Spécialité</span>
-                                                <input type="text"  placeholder="spécialité"  />
-                                            </div>  
-                                        </div>
-
-                                        
-                                        <div class="col-sm-12">
-                                        <span>Années d'expérience</span><br>
-                                            <div class="input-select">
-                                                <select required="">
-                                                    <option value="-2">-2</option>
-                                                    <option value="2-5">2-5 </option>
-                                                    <option value="5-10">5-10</option>
-                                                    <option value="10-15">10-15</option>
-                                                    <option value="+15">+15</option>
-                                                </select>
-                                            </div>
+                                    <span>Veillez selectionner les sectreurs d'activité que vous etes interessé par:</span>
+                                    <div class="form-group col-sm-12" ">
+                                              
+                                                    <select id="Books1" style="border-radius:5px; width: 494px" runat="server" data-placeholder="Secteurs d'activité "  class="selectpicker show-menu-arrow " multiple tabindex="6" >
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Énergie</option>
+                                                    <option > Forage gazier et pétrolier</option>
+                                                    <option>Équipements et Services liés au Pétrole et au Gaz</option>
+                                                    <option>Gaz et Pétrole intégrés</option>
+                                                    <option >Exploration et Production de Pétrole et de Gaz</option>
+                                                    <option >Raffinage et Commercialisation de Pétrole et de Gaz</option>
+                                                    <option >Stockage et Transport de Pétrole et de Gaz</option>
+                                                    <option >Charbon et Combustibles</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Matériaux</option>
+                                                    <option>Produits Chimiques de Base</option>
+                                                    <option>Produits Chimiques Diversifiés</option>
+                                                    <option>Engrais et Produits Chimiques Agricoles</option>
+                                                    <option>Gaz Industriels</option>
+                                                    <option>Matériaux de Construction </option>
+                                                    <option>Conteneurs en Verre ou en Métal</option>
+                                                    <option>Emballages en Papier</option>
+                                                    <option>Métaux diversifiés et exploitation minière</option>
+                                                    <option>Produits de la Forêt</option>
+                                                    <option> Produits à Base de Papier</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Industrie</option>
+                                                    <option> Aérospatiale et Défense</option>
+                                                    <option> Produits pour l'Industrie du Bâtiment</option>
+                                                    <option>Construction et Ingénierie
+                                                    <option>Composants et Équipement Électriques</option>
+                                                    <option>Équipement Électriques Lourds</option>
+                                                    <option>Conglomérats Industriels</option>
+                                                    <option>Machines Agricoles</option>
+                                                    <option>Machines Industrielles</option>
+                                                    <option>Sociétés Commerciales et Distributeurs Commerciaux</option>
+                                                    <option>Imprimerie Commerciale</option>
+                                                    <option>Services liés à l’Environnement et aux Locaux</option>
+                                                    <option>Services et fournitures de Bureau</option>
+                                                    <option>Services d'Aide Divers</option>
+                                                    <option>Services de Sécurité et d'Alarme</option>
+                                                    <option>Services Liés aux Ressources Humaines et aux Emplois</option> 
+                                                    <option>Services de Recherche et Conseil</option>
+                                                    <option>Fret Aérien et Logistique</option>
+                                                    <option>Compagnies Aériennes</option>
+                                                    <option>Transport Maritime</option>
+                                                    <option>Transport Ferroviaire</option>
+                                                    <option>Transport Routier</option>
+                                                    <option>Services Aéroportuaires</option>
+                                                    <option>Ports et Services Maritimes</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Consommation Discrétionnaire</option>
+                                                    <option>Pièces Détachées et Équipement d'Automobiles</option>
+                                                    <option>Pneus et Caoutchouc</option>
+                                                    <option>Constructeurs Automobiles</option>
+                                                    <option>Constructeurs de Motocycles</option>
+                                                    <option>Électronique Grand Public </option>
+                                                    <option>Ameublement</option>
+                                                    <option>Constructions d'Habitations Résidentielles</option>
+                                                    <option>Appareils Électroménagers</option>
+                                                    <option>Articles Ménagers et Spécialisés</option>
+                                                    <option>Produits de Loisirs</option>
+                                                    <option>Habillement, Accessoires et Produits de Luxe</option>
+                                                    <option>Chaussures</option>
+                                                    <option>Textiles</option>
+                                                    <option>Casinos et Salles de Jeu</option>
+                                                    <option>Hôtels, Lieux de Villégiature et Croisières</option>
+                                                    <option>Centres de Loisirs</option>
+                                                    <option>Restaurants</option>
+                                                    <option>Services Éducatifs</option>
+                                                    <option>Services Consommateurs Spécialisés</option>
+                                                    <option>Publicité</option>
+                                                    <option>Radiotélévision</option>
+                                                    <option>Câble et Satellite</option>
+                                                    <option>Films et Divertissements</option>
+                                                    <option>Édition</option>
+                                                    <option>Distributeurs</option>
+                                                    <option>Vente au Détail par Catalogue</option>
+                                                    <option>Vente par Internet et marketing direct</option>
+                                                    <option>Grands magasins</option>
+                                                    <option>Distribution Diversifiée</option>
+                                                    <option>Vente au Détail de Vêtements</option>
+                                                    <option>Vente au Détail de Produits Informatiques et Électroniques</option>
+                                                    <option>Vente au Détail de Produits pour la Maison</option>
+                                                    <option>Magasins Spécialisés</option>
+                                                    <option>Vente au Détail de Produits pour l'Automobile</option>
+                                                    <option>Vente au Détail d'Ameublement</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px" >Biens de Consommation de Base</option>
+                                                    <option>Vente au Détail de Médicaments</option>
+                                                    <option>Vente au Détail de Produits Alimentaires</option>
+                                                    <option>Supermarchés et Hypermarchés</option>
+                                                    <option>Brasseurs</option>
+                                                    <option>Distillateurs et Négociants en Vin</option>
+                                                    <option>Boissons Non-alcoolisées</option>
+                                                    <option>Produits Agricoles</option>
+                                                    <option>Aliments et Viandes Conditionnés</option>
+                                                    <option>Tabac</option>
+                                                    <option>Produits Domestiques</option>
+                                                    <option>Produits de Soin Personnel</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Santé</option>
+                                                    <option>Équipements Médicaux</option>
+                                                    <option>Fournitures Médicales</option>
+                                                    <option>Distribution de Produits de Santé</option>
+                                                    <option>Services de Santé</option>
+                                                    <option>Infrastructures Médicales</option>
+                                                    <option>Gestion Intégrée des Soins de Santé</option>
+                                                    <option>Technologies des Soins de Santé </option>
+                                                    <option>Biotechnologie</option>
+                                                    <option>Produits Pharmaceutiques</option>
+                                                    <option>Outils et Services Appliqués aux Sciences Biologiques</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Finance</option>
+                                                    <option>Banques aux Activités Diversifiées</option>
+                                                    <option>Banques régionales</option>
+                                                    <option>Epargne et Prêts Hypothécaires</option>
+                                                    <option>Autres Services Financiers Diversifiés</option>
+                                                    <option>Holdings Multisectoriels</option>
+                                                    <option>Institutions Financières Spécialisées</option>
+                                                    <option>Crédit à la Consommation</option>
+                                                    <option>Banques de Dépôt et de Gestion des Biens</option>
+                                                    <option>Services Bancaires d'Investissement et Courtage</option>
+                                                    <option>Marchés de Capitaux Diversifiés</option>
+                                                    <option>Bourses et données financières</option>
+                                                    <option>SIIC spécialisées dans le Crédit Hypothécaire</option>
+                                                    <option>Courtiers en Assurance</option>
+                                                    <option>Assurances Vie et Assurances Maladie</option>
+                                                    <option>Assurances Multirisques</option>
+                                                    <option>Assurances de Biens et Assurances de Risques Divers</option>
+                                                    <option>Réassurance</option>
+                                                    <option>SIIC à Exploitation Diversifiée </option>
+                                                    <option>SIIC Industrielles </option>
+                                                    <option>SIIC spécialisées dans le Crédit Hypothécaire</option>
+                                                    <option>SIIC Hôtel et Lieu de Villégiature</option>
+                                                    <option>SIIC Bureautiques</option>
+                                                    <option>SIIC Soins de Santé</option>
+                                                    <option>SIIC Résidentielles</option>
+                                                    <option>SIIC au Détail </option>
+                                                    <option>SIIC Spécialisées</option>
+                                                    <option>Activités immobilières diversifiées</option>
+                                                    <option>Sociétés d'Exploitation de Biens Immobiliers </option>
+                                                    <option>Promotion Immobilière</option>
+                                                    <option>Services Immobiliers</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Technologies de l'Information</option>
+                                                    <option>Logiciels et Services Internet</option>
+                                                    <option>Conseils Liés Aux Technologies de l’Information et Autres Services</option>
+                                                    <option>Traitement des Données et Services Externalisés</option>
+                                                    <option>Logiciels d'Application</option>
+                                                    <option>Logiciels Système</option>
+                                                    <option>Logiciel de Divertissement à Domicile</option>
+                                                    <option>Équipement de Communication</option>
+                                                    <option>Technologie du Matériel Informatique, du Stockage et des Périphériques</option>
+                                                    <option>Équipement et Instruments Électroniques</option>
+                                                    <option>Composants Électroniques</option>
+                                                    <option>Services de Fabrication Électronique</option>
+                                                    <option>Distributeurs de Technologie</option>
+                                                    <option>Équipement de Semi-conducteurs</option>
+                                                    <option>Semi-conducteurs </option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Services de Télécommunication </option>
+                                                    <option>Prestataires de services alternatifs</option>
+                                                    <option>Services de Télécommunication Intégrés</option>
+                                                    <option>Services de Télécommunication Sans Fil</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Services aux Collectivités</option>
+                                                    <option>Électricité</option>
+                                                    <option>Gaz</option>
+                                                    <option>Compagnies aux activités diversifiées</option>
+                                                    <option>Compagnies des Eaux</option>
+                                                    <option>Producteurs d’Énergie Indépendants et Fournisseurs d'Énergie</option>
+                                                    <option>Electricité Renouvelable</option>
+                                                    <option disabled="disabled" style="font-weight: 900; font-size: 16px">Immobilier</option>
+                                                    <option>SIIC à Exploitation Diversifiée</option> 
+                                                    <option>SIIC Industrielles</option>
+                                                    <option>SIIC Hôtel et Lieu de Villégiature </option>
+                                                    <option>SIIC Bureautiques</option>
+                                                    <option>SIIC Soins de Santé </option>
+                                                    <option>SIIC Résidentielles</option>
+                                                    <option>SIIC au Détail</option>
+                                                    <option>SIIC Spécialisées</option>
+                                                    <option>Activités Immobilières Diversifiées</option>
+                                                    <option>Sociétés d'Exploitation de Biens Immobiliers</option> 
+                                                    <option>Promotion Immobilière</option>
+                                                    <option>Services Immobiliers</option>
+                                                            </select>
+                                            
+                                                        
+                                              
+                                         
                                         </div>
                                 </div>
-                               
-
-
-
-
-
                                 
                                 <div class="col-sm-12">
-                                    <button type="submit" class="btn btn--primary">Send Form</button>
+                                    <button type="submit" class="btn btn--primary" >Send Form</button>
                                 </div>
                             </form>
+
                         </div>                        
                     </div>
                     <!--end of row-->
@@ -1347,7 +781,48 @@ function conseillerdetail()
         <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
             <i class="stack-interface stack-up-open-big"></i>
         </a>
-        <script src="js/jquery-3.1.1.min.js"></script>
+
+<script>
+  var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script src="js/ion.rangeSlider.js"></script>
+
+<script>
+
+    $(function () {
+
+        $("#range").ionRangeSlider({
+            hide_min_max: true,
+            keyboard: true,
+            min: 0,
+            max: 4000000000,
+            from: 1000000,
+            to: 400000000,
+            type: 'double',
+            step: 100000,
+            prefix: "TND ",
+            grid: true
+        });
+
+    });
+</script>
+
         <script src="js/flickity.min.js"></script>
         <script src="js/easypiechart.min.js"></script>
         <script src="js/parallax.js"></script>

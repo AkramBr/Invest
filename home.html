@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i%7CMaterial+Icons" rel="stylesheet">
         
     </head>
-    <body class=" ">
+    <body class="" data-smooth-scroll-offset='64'>
         <a id="start"></a>
         <section class="bar bar-3 bar--sm bg--secondary">
             <div class="container">
@@ -31,190 +31,11 @@
                         <div class="bar__module">
                             <ul class="menu-horizontal">
                                 <li>
-                                    <div class="modal-instance">
-                                        <a href="#" class="modal-trigger">Login</a>
-                                        <div class="modal-container">
-                                            <div class="modal-content">
-                                                <section class="unpad ">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-sm-6 col-md-offset-3 col-sm-offset-3 col-xs-12">
-                                                                <div class="boxed boxed--lg bg--white text-center feature">
-                                                                    <div class="modal-close modal-close-cross"></div>
-                                                                    <h3>Login to Your Account</h3>
-                                                                    <a class="btn block btn--icon bg--facebook type--uppercase" href="#">
-                                                                        <span class="btn__text">
-                                                                            <i class="socicon-facebook"></i>
-                                                                            Login with Facebook
-                                                                        </span>
-                                                                    </a>
-                                                                    <a class="btn block btn--icon bg--twitter type--uppercase" href="#">
-                                                                        <span class="btn__text">
-                                                                            <i class="socicon-twitter"></i>
-                                                                            Login with Twitter
-                                                                        </span>
-                                                                    </a>
-                                                                    <hr data-title="OR">
-                                                                    <div class="feature__body">
-                                                                        <form>
-                                                                            <div class="row">
-                                                                                <div class="col-sm-12">
-                                                                                    <input type="text" placeholder="Username" />
-                                                                                </div>
-                                                                                <div class="col-sm-12">
-                                                                                    <input type="password" placeholder="Password" />
-                                                                                </div>
-                                                                                <div class="col-sm-12">
-                                                                                    <button class="btn btn--primary type--uppercase" type="submit">Login</button>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!--end of row-->
-                                                                        </form>
-                                                                        <span class="type--fine-print block">Dont have an account yet?
-                                                                            <a href="#">Create account</a>
-                                                                        </span>
-                                                                        <span class="type--fine-print block">Forgot your username or password?
-                                                                            <a href="#">Recover account</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end of row-->
-                                                    </div>
-                                                    <!--end of container-->
-                                                </section>
-                                            </div>
-                                        </div>
-                                    </div>
+                                        <a href="#" >Login</a>
                                 </li>
-                                <li>
-                                    <div class="modal-instance">
-                                        <a href="#" class="modal-trigger">Create Account</a>
-                                        <div class="modal-container">
-                                            <div class="modal-content">
-                                                <section class="imageblock feature-large bg--white border--round ">
-                                                    <div class="imageblock__content col-md-5 col-sm-3 pos-left">
-                                                        <div class="background-image-holder">
-                                                            <img alt="image" src="img/cowork-11.jpg" />
-                                                        </div>
-                                                    </div>
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-md-6 col-md-push-6 col-sm-7 col-sm-push-4">
-                                                                <h2>Create an account</h2>
-                                                                
-                                                                <hr data-title="">
-                                                                <div class="col-md-12">
-                            <form>
-                            <h4>Informations générales :</h4>
-                                <div class="col-sm-6">
-                                    <label>First Name:</label>
-                                    <input type="text" name="name" placeholder="First Name" required/>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label>Last Name :</label>
-                                    <input type="text" name="lastname" placeholder="Last Name" required/>
-                                </div>
-                                <div class="col-sm-12">
-                                    <label>Raison Social:</label>
-                                    <input type="text" name="raisonSocial" placeholder="Raison Social" required/>
-                                </div>
-                                <div class="col-sm-12">
-                                    <label>Email:</label>
-                                    <input type="email" name="email" placeholder="Email"  required/>
-                                </div>
-                                <div class="col-sm-12">
-                                    <label>Téléphone:</label>
-                                    <input type="text" name="téléphone" placeholder="Téléphone"  />
-                                </div>
-                                <h4>Choix des profils :</h4>
-                                <div class="col-sm-12">
-                                    
-                                    <span>Inscrivez-vous en tantque:
-                                    </span>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="input-checkbox ">
-                                        <div class="inner"></div>
-                                        <input type="checkbox" name="bailleur" id="sb" onchange="bailleurdetail()">
-                                    </div>
-                                    <span>Bailleur de fond
-                                    </span>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="input-checkbox ">
-                                        <div class="inner"></div>
-                                        <input type="checkbox" name="porteur" id="sp" onchange="porteurdetail()">
-                                    </div>
-                                    <span>Porteur de Projet
-                                        
-                                    </span>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="input-checkbox ">
-                                        <div class="inner"></div>
-                                        <input type="checkbox" name="conseiller" id="sc" onchange="conseillerdetail()">
-                                    </div>
-                                    <span>Conseiller
-                                        
-                                    </span>
-                                </div>
-                                <div class="col-sm-12" id="bail" hidden="hidden">
-                                    <div class="col-sm-12">
-                                    <div class="input-checkbox ">
-                                        <div class="inner"></div>
-                                        <input type="checkbox" name="bailleur" id="sb" onchange="bailleurdetail()">
-                                    </div>
-                                    <span>Bailleur de fond
-                                    </span>
-                                    <div class="input-checkbox ">
-                                        <div class="inner"></div>
-                                        <input type="checkbox" name="bailleur" id="sb" onchange="bailleurdetail()">
-                                    </div>
-                                    <span>Bailleur de fond
-                                    </span>
-                                    <div class="input-checkbox ">
-                                        <div class="inner"></div>
-                                        <input type="checkbox" name="bailleur" id="sb" onchange="bailleurdetail()">
-                                    </div>
-                                    <span>Bailleur de fond
-                                    </span>
-                                </div>
-                                </div>
-                                <div class="col-sm-12" hidden="hidden" id="port">
-                                    <label>Info porteur</label>
-                                    <input type="text" name="" placeholder="Téléphone"  />
-                                </div>
-                                <div class="col-sm-12" hidden="hidden" id="cons">
-                                    <label>Info Conseiller</label>
-                                    <input type="range Multiple" name="" placeholder="Téléphone"  />
-                                </div>
-                               
-
-
-
-
-
-                                
-                                <div class="col-sm-12">
-                                    <button type="submit" class="btn btn--primary">Send Form</button>
-                                </div>
-                            </form>
-                        </div> 
-                                                            </div>
-                                                        </div>
-                                                        <!--end of row-->
-                                                    </div>
-                                                    <!--end of container-->
-                                                </section>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <li> 
+                                        <a href="register.html" >Create account</a>
                                 </li>
-                               
-                               
-                                
                             </ul>
                         </div>
                     </div>
@@ -232,7 +53,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-3 col-sm-2">
-                            <a href="index.html">
+                            <a href="home.html">
                                 <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
                                 <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
                             </a>
@@ -248,12 +69,12 @@
                 <!--end of container-->
             </div>
             <!--end bar-->
-            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs ">
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs" data-scroll-class='366px:pos-fixed'>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-1 col-sm-2 hidden-xs">
                             <div class="bar__module">
-                                <a href="index.html">
+                                <a href="home.html">
                                     <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
                                     <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
                                 </a>
@@ -264,7 +85,7 @@
                             <div class="bar__module">
                                 <ul class="menu-horizontal text-left">
                                   <li class="dropdown">
-                                        <a href="" class="">Accueil</a>
+                                        <a class="inner-link" href="#start">Accueil</a>
                                     </li>
                                     <li class="dropdown">
                                         <a href="#secteur" class="inner-link">Secteurs d'activités</a>

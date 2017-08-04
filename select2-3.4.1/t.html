@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Select2 Plug-in</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    
+    <script src="select2-3.4.1/select2.js"></script>
+    <link href="select2-3.4.1/select2.css" rel="stylesheet"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--THE SELECT DROP-LIST WITH NO DEFAULT VALUES (OPTIONS)--%>
+        <div>
+            <select id="Books" style="width:300px" runat="server"></select>
+            <option>Services et fournitures de Bureau</option>
+                                                    <option>Services d'Aide Divers</option>
+                                                    <option>Services de Sécurité et d'Alarme</option>
+                                                    <option>Services Liés aux Ressources Humaines et aux Emplois</option> 
+                                                    <option>Services de Recherche et Conseil</option>
+                                                    <option>Fret Aérien et Logistique</option>
+                                                    <option>Compagnies Aériennes</option>
+                                                    <option>Transport Maritime</option>
+                                                    <option>Transport Ferroviaire</option>
+                                                    <option>Transport Routier</option>
+                                                    <option>Services Aéroportuaires</option>
+                                                    <option>Ports et Services Maritimes</option>
+        </div>
+    </form>
+</body>
+<script>
+    $(document).ready(function() {
+        $("#Books").select2({ placeholder: 'Find and Select Books' });
+    });
+</script>
+</html>
